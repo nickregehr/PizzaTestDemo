@@ -30,24 +30,7 @@ namespace PizzaClassDemo
         private void button2_Click(object sender, EventArgs e)
         {
             p = null;
-            System.Threading.Thread.Sleep(1000);
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
-            p = null;
+            GC.Collect();
             MessageBox.Show(p2.PizzaCount.ToString());
 
         }
