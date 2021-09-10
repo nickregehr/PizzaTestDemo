@@ -47,9 +47,9 @@ namespace PizzaClassDemo
             // 
             this.button2.Location = new System.Drawing.Point(336, 231);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(206, 23);
+            this.button2.Size = new System.Drawing.Size(232, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "show count";
+            this.button2.Text = "collect memory and then show count";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
