@@ -19,7 +19,8 @@ namespace PizzaClassDemo
 
         ~Pizza()
         {
-            --pizzaCount;
+            pizzaCount--;
+            System.Windows.Forms.MessageBox.Show("Test");
         }
 
         private static int pizzaCount = 0;
