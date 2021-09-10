@@ -12,15 +12,25 @@ namespace PizzaClassDemo
 {
     public partial class Form1 : Form
     {
+        Pizza p = new Pizza("small", "pepporoni", "pepperoni");
         public Form1()
         {
             InitializeComponent();
-            Pizza p = new Pizza("small", "pepporoni", "pepperoni");
-            MessageBox.Show(p.Cost.ToString());
-
+            //create 2 pizzas
             Pizza p2 = new Pizza("large", "hawaiian", "pineapple", "ham", "bacon");
-            MessageBox.Show(p2.Cost.ToString());
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Pizza p3 = new Pizza("small", "pepporoni", "pepperoni");
+            MessageBox.Show(p3.PizzaCount.ToString());
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(p.PizzaCount.ToString());
+
+        }
     }
 }

@@ -13,7 +13,17 @@ namespace PizzaClassDemo
             this._size = _size;
             this._name = _name;
             this._toppings.AddRange(toppings);
+
+            pizzaCount++;
         }
+
+        ~Pizza()
+        {
+            --pizzaCount;
+        }
+
+        private static int pizzaCount = 0;
+
         //Fields
         private string _size;
         private string _name;
@@ -47,6 +57,11 @@ namespace PizzaClassDemo
 
                 return tmp;
             }
+        }
+
+        public int PizzaCount
+        {
+            get { return pizzaCount; }
         }
     }
 }
