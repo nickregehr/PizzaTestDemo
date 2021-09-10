@@ -20,7 +20,7 @@ namespace PizzaClassDemo
         ~Pizza()
         {
             pizzaCount--;
-            System.Windows.Forms.MessageBox.Show("Test");
+            System.Windows.Forms.MessageBox.Show("Destructor called");
         }
 
         private static int pizzaCount = 0;
